@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap');
 
 *{
@@ -175,4 +176,183 @@ body{
 
 #winner{
     font-weight: 600;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: black;
+}
+
+
+.heading{
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 6rem;
+    height: 25vh;
+}
+
+.main{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1.8fr 2fr;
+    height: 40vh;
+}
+
+.footer{
+    height:35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-btn{
+    font-size: 3rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    padding: 1rem 6.5rem;
+    border-radius: 2.8rem;
+}
+
+.restart-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.sec-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    cursor: pointer;
+}
+
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* outline: 1px solid red; */
+}
+
+.square-1,
+.square-2,
+.square-4,
+.square-5{
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+}
+
+.square-3,
+.square-6{
+    border-bottom: 3px solid white;
+}
+
+.square-7,
+.square-8{
+    border-right: 3px solid white;
+}
+
+.x{
+    background-color: #DD2F00;
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+}
+
+.o{
+    background-color: #1F21C0;
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+}
+
+.x-mask,
+.o-mask{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 24.5rem;
+    height: 24.5rem;
+}
+
+.sec-1,
+.sec-3{
+    position: relative;
+    justify-self: center;
+    align-self: center;
+}
+
+.x-score,
+.o-score{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 10rem;
+    color: white;
+}
+
+
+.image{
+    position: absolute;
+    height: 8rem;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.img-hover{
+    opacity: 0.5;
+}
+
+.square.hov-b.square:hover{
+    background-color: #1f22c040;
+}
+
+.square.hov-r.square:hover{
+    background-color: #dd300040;
+}
+
+.square.hov-over.square:hover{
+    background-color: unset;
+    cursor: not-allowed;
+}
+
+.cover{
+    padding-top: 7%;
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.hidden{
+    display:none;
+}
+
+#winner{
+    font-weight: 600;
+>>>>>>> db11f6478271321e29743d5821618a884916c1d9
 }
